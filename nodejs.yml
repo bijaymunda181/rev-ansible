@@ -1,5 +1,5 @@
 - name: Install Nodejs repo
-  ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x
+  ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
 - name: Install Nodejs
   ansible.builtin.dnf:
@@ -15,5 +15,5 @@
     chdir: /app
 
 - name: schema setup
-  ansible.builtin.import_task: mongo-schema.yml
+  ansible.builtin.import_task: app-preq.yml
 
