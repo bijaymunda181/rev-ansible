@@ -15,5 +15,5 @@
     chdir: /app
 
 - name: schema setup
-  ansible.builtin.import_task:
+  ansible.builtin.import_task: mongo-schema.yml
 
