@@ -9,7 +9,7 @@
         disable_gpg_check: true
 
     - name: Enable Redis Module
-      ansible.builtin.shell: yum enable redis:redmi-6.2 -y
+      ansible.builtin.shell: yum module enable redis:redmi-6.2 -y
 
     - name: Install Redis
       ansible.builtin.dnf:
