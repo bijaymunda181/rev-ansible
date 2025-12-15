@@ -8,7 +8,7 @@
         state: installed
 
     - name: Enable Redis Module
-      ansible.builtin.shell: enable redis:redmi-6.2
+      ansible.builtin.shell: yum enable redis:redmi-6.2
 
     - name: Install Redis
       ansible.builtin.dnf:
